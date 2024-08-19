@@ -29,30 +29,32 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    height: 20px;
 }
 
-nav ul {
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+ul li a {
     color: #fff;
     text-decoration: none;
 }
 
 main {
-    padding: 20px;
+    position: relative;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente para legibilidade */
     border-radius: 10px;
     max-width: 800px;
-    margin: auto;
+    margin: 0 20% 5% 20%;
 }
 
 footer {
@@ -68,12 +70,33 @@ footer {
 
 
 section#home img {
-    max-width: 200px;
+    max-width: 100px;
     border-radius: 50%;
 }
 
 
+
+/* Ajusta o layout da lista de projetos */
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .project img {
-    max-width: 10%;
-    height: 10%;
+    max-width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e a descrição */
+}
+
+.project-content {
+    max-width: calc(100% - 170px); /* Ajusta a largura para acomodar a imagem e o espaço entre */
+}
+
+.project-content h2 {
+    margin-top: 0;
+}
+
+.project-content p {
+    margin-bottom: 0;
 }
